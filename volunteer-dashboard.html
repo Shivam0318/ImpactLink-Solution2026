@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ImpactLink | Volunteer Portal</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body style="background: #0a0a0a; color: white; font-family: 'Segoe UI', sans-serif;">
+
+    <nav style="display: flex; justify-content: space-between; padding: 20px; background: #111; border-bottom: 1px solid #333;">
+        <h2 style="color: #00bcd4; margin: 0;">🤝 Volunteer Hub</h2>
+        <button id="logoutBtn" style="background: transparent; border: 1px solid #ff4b2b; color: #ff4b2b; cursor: pointer; padding: 5px 15px; border-radius: 5px;">Logout</button>
+    </nav>
+
+    <div style="max-width: 900px; margin: 20px auto; padding: 0 20px;">
+        
+        <section id="aiInsight" style="background: linear-gradient(135deg, #1e1e1e, #111); padding: 20px; border-radius: 12px; margin-bottom: 30px; border: 1px solid #00bcd4;">
+            <h3 style="color: #00bcd4; margin-top: 0;">🤖 AI Dispatcher</h3>
+            <p id="volunteerAdvice" style="font-size: 14px; color: #ccc;">Loading AI priority advice for your area...</p>
+        </section>
+
+        <h3>Available Opportunities</h3>
+        <div id="volunteerFeed">
+            <p>Scanning for active relief tasks...</p>
+        </div>
+    </div>
+    <h3 style="color: #00bcd4; margin-top: 40px;">📋 My Active Missions</h3>
+<div id="activeMissions" style="background: #161616; padding: 15px; border-radius: 10px; border: 1px dashed #333;">
+    </div>
+
+    <script type="module" src="volunteer-logic.js"></script>
+</body>
+</html>

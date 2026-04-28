@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NGO & Volunteer Portal</title>
+    <style>
+        body { font-family: sans-serif; padding: 20px; background: #121212; color: white; }
+        .form-box { max-width: 400px; margin: auto; background: #1e1e1e; padding: 20px; border-radius: 8px; }
+        input, select, button { width: 100%; padding: 10px; margin: 10px 0; border-radius: 4px; border: none; }
+        button { background: #03dac6; color: black; font-weight: bold; cursor: pointer; }
+    </style>
+</head>
+<body>
+
+    <div class="form-box">
+        <h2>Register</h2>
+        <input type="email" id="email" placeholder="Email">
+        <input type="password" id="password" placeholder="Password">
+        
+        <label>I am a:</label>
+        <select id="role">
+            <option value="volunteer">Volunteer</option>
+            <option value="ngo">NGO</option>
+        </select>
+
+        <button id="signUpBtn">Sign Up</button>
+    </div>
+    <div class="container" id="loginSection" style="margin-top: 20px;">
+    <h2>Login</h2>
+    <input type="email" id="loginEmail" placeholder="Email">
+    <input type="password" id="loginPassword" placeholder="Password">
+    <button id="loginBtn">Sign In</button>
+</div>
+    <script type="module" src="app.js"></script>
+</body>
+</html>

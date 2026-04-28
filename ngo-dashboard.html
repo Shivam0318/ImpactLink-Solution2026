@@ -1,0 +1,49 @@
+<button id="logoutBtn" style="position: absolute; top: 10px; right: 10px; background: #ff4b2b;">Logout</button>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NGO Dashboard</title>
+    <link rel="stylesheet" href="style.css"> </head>
+<body>
+    <div class="container">
+        <h1>NGO Control Center</h1>
+        <p>Post a new requirement for volunteers below.</p>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <div id="reportDashboard" style="display:none; background: #1a1a1a; padding: 20px; border-radius: 10px;">
+            <h3 style="color: #00bcd4;">📊 NGO Impact Report</h3>
+            
+            <canvas id="priorityChart" style="max-height: 300px;"></canvas>
+            <div id="aiReportText" style="color: white; margin-top: 15px;"></div>
+            <div id="aiOutput"></div> 
+        </div>
+        <<div class="post-box">
+            <input type="text" id="oppTitle" placeholder="Title">
+            <textarea id="oppDesc" placeholder="Description"></textarea>
+            
+            <label for="fileInput" style="display:block; margin: 10px 0; color: #00bcd4; cursor: pointer;">
+                📁 Upload Image/Doc (Optional)
+            </label>
+            <input type="file" id="fileInput" accept="image/*, .pdf" style="margin-bottom: 10px;">
+            
+            <button id="postBtn">Broadcast Opportunity</button>
+        </div>
+        <div class="ai-analysis-box" style="background: #121212; border: 1px solid #00bcd4; padding: 20px; border-radius: 10px; margin-top: 20px;">
+            <h3 style="color: #00bcd4;">🤖 AI Priority Analysis</h3>
+            <button id="analyzeBtn" style="background: #6200ee; color: white; padding: 10px; border: none; border-radius: 5px; cursor: pointer;">
+                Get AI Recommendations
+            </button>
+            <div id="aiOutput" style="margin-top: 15px; color: white;">
+                <em>Click the button to analyze your active posts...</em>
+            </div>
+        </div>
+        
+
+        <hr>
+        <h3>Your Active Posts</h3>
+        <div id="myPosts">Loading your posts...</div>
+    </div>
+
+    <script type="module" src="ngo-logic.js"></script>
+</body>
+</html>
