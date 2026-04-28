@@ -4,7 +4,7 @@ import { getFirestore, collection, addDoc, serverTimestamp, query, orderBy, onSn
 
 // 1. Firebase Config
 const firebaseConfig = {
-    apiKey: "AIzaSyDSvr3e2K4bSXDvPn_l4Acgq12c_wOCRGs",
+    apiKey: "AIzaSyB5MFw7PIHtigYSCE1AEH0hk2ZjXp8BNxs",
     authDomain: "impactlink-solution2026.firebaseapp.com",
     projectId: "impactlink-solution2026",
     storageBucket: "impactlink-solution2026.firebasestorage.app",
